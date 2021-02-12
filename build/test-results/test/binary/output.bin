@@ -1,0 +1,2 @@
+TConnecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+DConnection is successful!!!!com.mysql.jdbc.JDBC4Connection@da5cb24
