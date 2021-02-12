@@ -1,11 +1,4 @@
-jdbcpractice/EmployeePayrollFileDBService.java
- jdbcpractice.EmployeePayrollFileDBService
-jdbcpractice/EmployeePayrollData.java
- jdbcpractice.EmployeePayrollData
-jdbcpractice/EmployeePayrollFileIOService.java
- jdbcpractice.EmployeePayrollFileIOService
-jdbcpractice/EmployeePayrollService.java
- jdbcpractice.EmployeePayrollService
- jdbcpractice.EmployeePayrollService$IOService
 jdbcpractice/DBDemo.java
  jdbcpractice.DBDemo
+jdbcpractice/EmployeePayrollService.java
+ jdbcpractice.EmployeePayrollService
