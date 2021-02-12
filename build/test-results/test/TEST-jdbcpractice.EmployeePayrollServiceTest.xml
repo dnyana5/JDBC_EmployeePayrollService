@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-11T12:02:56" hostname="DESKTOP-BLCU99U" time="5.582">
+<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-12T09:02:07" hostname="DESKTOP-BLCU99U" time="7.939">
   <properties/>
-  <testcase name="givenEmployeePayrollInDB_WhenRetrived_ShouldMathchEmployeeCount" classname="jdbcpractice.EmployeePayrollServiceTest" time="5.582"/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrived_ShouldMathchEmployeeCount" classname="jdbcpractice.EmployeePayrollServiceTest" time="7.939"/>
   <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
 Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@da5cb24
 ]]></system-out>
