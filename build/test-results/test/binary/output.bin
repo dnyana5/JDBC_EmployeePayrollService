@@ -1,6 +1,4 @@
 TConnecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
 DConnection is successful!!!!com.mysql.jdbc.JDBC4Connection@da5cb24
 TConnecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
-EConnection is successful!!!!com.mysql.jdbc.JDBC4Connection@56ded4cc
-TConnecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
-DConnection is successful!!!!com.mysql.jdbc.JDBC4Connection@19fca4a
+DConnection is successful!!!!com.mysql.jdbc.JDBC4Connection@d0c69ab
