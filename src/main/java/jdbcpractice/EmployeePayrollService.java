@@ -3,6 +3,7 @@ package jdbcpractice;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class EmployeePayrollService {
@@ -55,6 +56,12 @@ public class EmployeePayrollService {
         if(ioService.equals(IOService.DB_IO))
             return employeePayrollDBService.getEmployeePayrollForDateRange(startDate, endDate);
         return  null;
+    }
+
+    public Map<String, Double> readAverageSalaryByGender(IOService ioService) {
+        if(ioService.equals(IOService.DB_IO))
+            return employeePayrollDBService.getAverageSalaryByGender();
+        return null;
     }
 
 
