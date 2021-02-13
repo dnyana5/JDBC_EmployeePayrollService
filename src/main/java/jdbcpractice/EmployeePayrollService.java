@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class EmployeePayrollService {
     private IOService ioService;
 
-    public enum IOService {CONSOLE_IO, FILE_IO, DB_IO, REST_IO};
+    public enum IOService {CONSOLE_IO, FILE_IO, DB_IO, REST_IO}
     private List<EmployeePayrollData> employeePayrollList;
     private  EmployeePayrollDBService employeePayrollDBService;
 
@@ -40,12 +40,6 @@ public class EmployeePayrollService {
         employeePayrollList.add(new EmployeePayrollData(id, name, salary));
     }
 
-    public void writeEmployeePayrollData(IOService ioService) {
-        if (ioService.equals(IOService.CONSOLE_IO))
-            System.out.println("\nWriting Employee Payroll Roaster to Console\n" +employeePayrollList);
-        else if(ioService.equals(IOService.FILE_IO))
-            new EmployeePayrollFileIOService().writeData(employeePayrollList);
-    }
     public List<EmployeePayrollData> readEmployeePayrollData(IOService ioService) {
         if (ioService.equals(EmployeePayrollService.IOService.DB_IO))
             this.employeePayrollList = employeePayrollDBService.readData();
@@ -66,7 +60,7 @@ public class EmployeePayrollService {
 
 
     public boolean checkEmployeePayrollInSyncWithDB(String name) {
-        List<EmployeePayrollData> employeePayrollDataList = EmployeePayrollDBService.getInstance().getEmployeePayrollData(name); getEmployeePayrollData(name);
+        List<EmployeePayrollData> employeePayrollDataList = EmployeePayrollDBService.getInstance().getEmployeePayrollData(name);
                 return employeePayrollDataList.get(0).equals(getEmployeePayrollData(name));
     }
     public void updateEmployeeSalary(String name, double salary) {
@@ -83,6 +77,16 @@ public class EmployeePayrollService {
                     .orElse(null);
     }
 
+    public void addEmployeePayroll(String name, double salary, LocalDate startDate, String gender) {
+        employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name,salary,startDate,gender));
+    }
+
+    public void writeEmployeePayrollData(IOService ioService) {
+        if (ioService.equals(IOService.CONSOLE_IO))
+            System.out.println("\nWriting Employee Payroll Roaster to Console\n" +employeePayrollList);
+        else if(ioService.equals(IOService.FILE_IO))
+            new EmployeePayrollFileIOService().writeData(employeePayrollList);
+    }
 
     public void printData(IOService ioService) {
         if (ioService.equals(IOService.FILE_IO))
