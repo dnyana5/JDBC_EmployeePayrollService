@@ -73,7 +73,7 @@ public class EmployeePayrollServiceTest {
     public void givenNewEmployee_WhenAdded_ShouldSyncWithDB() {
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
         employeePayrollService.readEmployeePayrollData(DB_IO);
-        employeePayrollService.addEmployeePayroll("Mark",5000000.00,LocalDate.now(),"M");
+        employeePayrollService.addEmployeePayroll("Mark",5000000.00, LocalDate.now(),"M");
         boolean result = employeePayrollService.checkEmployeePayrollInSyncWithDB("Mark");
         Assert.assertTrue(result);
     }
