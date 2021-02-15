@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-13T10:38:26" hostname="DESKTOP-BLCU99U" time="0.996">
+<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-13T12:09:35" hostname="DESKTOP-BLCU99U" time="4.003">
   <properties/>
-  <testcase name="givenNewEmployee_WhenAdded_ShouldSyncWithDB" classname="jdbcpractice.EmployeePayrollServiceTest" time="0.996"/>
+  <testcase name="givenNewEmployee_WhenAdded_ShouldSyncWithDB" classname="jdbcpractice.EmployeePayrollServiceTest" time="4.003"/>
   <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
-Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@da5cb24
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@71bf8670
 Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
-Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@d0c69ab
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@12e5b446
 Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
-Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@9e92f1b
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@34d3fdc6
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
