@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class EmployeePayrollService {
     private IOService ioService;
 
+
     public enum IOService {CONSOLE_IO, FILE_IO, DB_IO, REST_IO}
     private List<EmployeePayrollData> employeePayrollList;
     private  EmployeePayrollDBService employeePayrollDBService;
@@ -76,8 +77,17 @@ public class EmployeePayrollService {
                     .findFirst()
                     .orElse(null);
     }
+    public void addEmployeesToPayroll(List<EmployeePayrollData> employeePayrollDataList) {
+        employeePayrollDataList.forEach(employeePayrollData -> {
+            System.out.println("Employee Being Added:" +employeePayrollData.name);
+            this.addEmployeeToPayroll(employeePayrollData.name,employeePayrollData.salary,
+                    employeePayrollData.startDate,employeePayrollData.gender);
+            System.out.println("Employee Added:"+employeePayrollData.name);
+        });
+        System.out.println(this.employeePayrollList);
+    }
 
-    public void addEmployeePayroll(String name, double salary, LocalDate startDate, String gender) {
+    public void addEmployeeToPayroll(String name, double salary, LocalDate startDate, String gender) {
         employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name,salary,startDate,gender));
     }
 
@@ -96,6 +106,6 @@ public class EmployeePayrollService {
     public long countEntries(EmployeePayrollService.IOService ioService) {
         if (ioService.equals(EmployeePayrollService.IOService.FILE_IO))
             return new EmployeePayrollFileIOService().countEntries();
-        return 0;
+        return employeePayrollList.size();
     }
 }
