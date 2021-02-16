@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-16T09:23:40" hostname="DESKTOP-BLCU99U" time="3.541">
+<testsuite name="jdbcpractice.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-16T10:59:24" hostname="DESKTOP-BLCU99U" time="11.941">
   <properties/>
-  <testcase name="given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="jdbcpractice.EmployeePayrollServiceTest" time="3.541"/>
+  <testcase name="given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="jdbcpractice.EmployeePayrollServiceTest" time="11.941"/>
   <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
 Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@75286b07
 Employee Being Added:Jeff Bezos
@@ -28,8 +28,35 @@ Employee Being Added:Anil
 Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
 Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@257df781
 Employee Added:Anil
-[id=9,name=Mark,salary=5000000.0, id=28,name=Jeff Bezos,salary=1000000.0, id=29,name=Bill Gates,salary=1000000.0, id=30,name=Mark Zuckerberg,salary=1000000.0, id=31,name=Sunder,salary=1000000.0, id=32,name=Mukesh,salary=1000000.0, id=33,name=Anil,salary=1000000.0]
-Duration without Thread:PT1.7259774S
+[id=9,name=Mark,salary=5000000.0, id=34,name=Jeff Bezos,salary=1000000.0, id=35,name=Bill Gates,salary=1000000.0, id=36,name=Mark Zuckerberg,salary=1000000.0, id=37,name=Sunder,salary=1000000.0, id=38,name=Mukesh,salary=1000000.0, id=39,name=Anil,salary=1000000.0]
+Duration without Thread:PT4.9545975S
+Employee Being Added:Bill Gates
+Employee Being Added:Jeff Bezos
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Employee Being Added:Mark Zuckerberg
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Employee Being Added:Mukesh
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Employee Being Added:Sunder
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Employee Being Added:Anil
+Connecting to database:jdbc:mysql://localhost:3306/emp_payrollservice?useSSL=false
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@783eb46f
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@203c9022
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@55f4240b
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@793aca8a
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@19182854
+Connection is successful!!!!com.mysql.jdbc.JDBC4Connection@67204d66
+Employee Added:Mark Zuckerberg
+Employee Added:Jeff Bezos
+Employee Added:Bill Gates
+Employee Added:Mukesh
+Employee Added:Sunder
+Employee Added:Anil
+[id=0,name=Jeff Bezos,salary=1000000.0, id=0,name=Bill Gates,salary=1000000.0, id=0,name=Mark Zuckerberg,salary=1000000.0, id=0,name=Sunder,salary=1000000.0, id=0,name=Mukesh,salary=1000000.0, id=0,name=Anil,salary=1000000.0]
+Duration with Thread:PT4.9545975S
+[id=9,name=Mark,salary=5000000.0, id=34,name=Jeff Bezos,salary=1000000.0, id=35,name=Bill Gates,salary=1000000.0, id=36,name=Mark Zuckerberg,salary=1000000.0, id=37,name=Sunder,salary=1000000.0, id=38,name=Mukesh,salary=1000000.0, id=39,name=Anil,salary=1000000.0, id=40,name=Mark Zuckerberg,salary=1000000.0, id=41,name=Jeff Bezos,salary=1000000.0, id=44,name=Bill Gates,salary=1000000.0, id=42,name=Mukesh,salary=1000000.0, id=43,name=Sunder,salary=1000000.0, id=45,name=Anil,salary=1000000.0]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

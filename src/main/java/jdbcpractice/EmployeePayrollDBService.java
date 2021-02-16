@@ -170,8 +170,8 @@ public class EmployeePayrollDBService {
             try {
                 connection.rollback();
                 return employeePayrollData;
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
+            } catch (SQLException exc) {
+                exc.printStackTrace();
             }
         }
         try(Statement statement = connection.createStatement()) {
